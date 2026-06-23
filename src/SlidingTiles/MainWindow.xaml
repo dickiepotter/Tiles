@@ -1,0 +1,19 @@
+<Window x:Class="SlidingTiles.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Sliding Tiles" SizeToContent="WidthAndHeight" ResizeMode="CanMinimize"
+        Background="#1B1F24">
+    <DockPanel Margin="16">
+        <DockPanel DockPanel.Dock="Top" LastChildFill="False" Margin="0,0,0,12">
+            <Button x:Name="ShuffleButton" Content="Shuffle" Padding="14,4" Click="OnShuffle"
+                    DockPanel.Dock="Left" />
+            <TextBlock x:Name="Status" DockPanel.Dock="Right" Foreground="#C8CDD4"
+                       VerticalAlignment="Center" FontFamily="Consolas" Text="Click a tile in line with the gap." />
+        </DockPanel>
+
+        <!-- Tiles are created and positioned in code; the Canvas is just the playfield. -->
+        <Border BorderBrush="#2C323A" BorderThickness="2" CornerRadius="6" Background="#11151A">
+            <Canvas x:Name="Board" />
+        </Border>
+    </DockPanel>
+</Window>
