@@ -7,6 +7,8 @@
 
 *By Richard Potter. The source discussed here lives in this repository under `src/SlidingTiles/`.*
 
+![The sliding-tile puzzle in its solved state](docs/images/puzzle.png)
+
 **Contents**
 
 - [Introduction](#introduction)
